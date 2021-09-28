@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.App {
+  font-family: Lato;
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+.Nav {
+  overflow: hidden;
+  color: white;
+  font-family: Roboto;
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+  position: sticky;
+}
+.navHead {
+  display: inline;
+  padding: 2rem;
+  border-right: 0.1rem solid #88898f;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.navItem {
+  display: inline-block;
+  padding: 2%;
+  font-size: 1.2rem;
+  color: #88898f;
+  font-weight: 600;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #141416;
+  margin-top: 2rem;
+}
+form {
+  font-size: 1.2rem;
+  font-family: Lato;
+  color: white;
+  border-radius: 2rem;
+  /* width: 100%; */
+  background-color: #23262f;
+  padding: 2rem;
+  overflow: hidden;
+}
+label {
+  display: block;
+  padding: 1rem;
+}
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-left: 5rem;
+}
+input:focus {
+  outline: 0;
+}
+
+.btn {
+  color: white;
+  background-color: #ff592c;
+  padding: 1rem;
+  border: 0;
+  font-weight: 600;
+  margin-top: 5%;
+}
+.btn:active {
+  background-color: #fd3700;
+}
+.res {
+  color: #88898f;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 15%;
+  padding: 2rem;
+  border-top: 0.1rem solid #88898f;
+  border-bottom: 0.1rem solid #88898f;
+  display: none;
+}
