@@ -4,7 +4,8 @@ import Nav from "./Nav";
 import IsTriangle from "./IsTriangle";
 import App from "./App";
 import Hypotenuse from "./Hypotenuse";
-
+import Area from "./Area";
+import Quiz from "./Quiz";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -12,11 +13,11 @@ ReactDOM.render(
     <Router>
       <Nav />
       <Switch>
-        <Route exact path="/" component={IsTriangle}></Route>
-        <Route path="/quiz" component={App}></Route>
+        <Route exact path="/" component={Quiz}></Route>
+        <Route path="/quiz" component={Quiz}></Route>
         <Route path="/hypotenuse" component={Hypotenuse}></Route>
         <Route path="/istriangle" component={IsTriangle}></Route>
-        <Route path="/area" component={App}></Route>
+        <Route path="/area" component={Area}></Route>
       </Switch>
     </Router>
   </StrictMode>,

@@ -1,28 +1,26 @@
 import "./styles.css";
 import { useState } from "react";
 
-export default function IsTriangle() {
+export default function Area() {
   var [res, useRes] = useState("");
 
   function FormHandler(e) {
     e.preventDefault();
-    var a = e.target.a.value;
-    var b = e.target.b.value;
-    var c = e.target.c.value;
-    var sum = Number(a) + Number(b);
-    console.log(sum);
-    if (sum > c) {
-      useRes("This is a valid triangle");
-    } else {
-      useRes("No triangle exists with these sides");
-    }
+    var a = Number(e.target.a.value);
+    var b = Number(e.target.b.value);
+    var c = Number(e.target.c.value);
+    var s = a + b + c;
+    console.log(s);
+    var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+    useRes("The area of the triangle is: " + area.toFixed(2) + " sq units");
     var res_block = document.getElementById("res");
     res_block.style.display = "block";
     res_block.scrollIntoView();
   }
   return (
     <div className="App">
-      <div className="head">Is this a Triangle?</div>
+      <div className="head">Area of the Triangle</div>
       <form className="hypForm" onSubmit={(e) => FormHandler(e)}>
         <label>
           Length of side a :

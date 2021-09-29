@@ -4,15 +4,16 @@
   font-family: Lato;
   text-align: center;
   margin: auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 .Nav {
   overflow: hidden;
   color: white;
   font-family: Roboto;
-  padding: 0 1rem;
-  margin-bottom: 4rem;
+  padding: 1rem;
   position: sticky;
+  background-color: #23262f;
+  padding-bottom: 0;
 }
 .navHead {
   display: inline;
@@ -31,6 +32,9 @@
   color: #88898f;
   font-weight: 600;
 }
+.navItem:hover {
+  border-bottom: 1px solid white;
+}
 a:visited {
   text-decoration: none;
   color: inherit;
@@ -42,9 +46,9 @@ a:link {
 
 body {
   background-color: #141416;
-  margin-top: 2rem;
+  margin-top: 0;
 }
-form {
+.hypForm {
   font-size: 1.2rem;
   font-family: Lato;
   color: white;
@@ -53,6 +57,18 @@ form {
   background-color: #23262f;
   padding: 2rem;
   overflow: hidden;
+}
+.quizForm {
+  font-size: 1.2rem;
+  font-family: Lato;
+  color: white;
+  border-radius: 2rem;
+  /* width: 100%; */
+  background-color: #23262f;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 4rem;
 }
 label {
   display: block;
@@ -63,6 +79,11 @@ input {
   padding: 0.5rem;
   border-radius: 2rem;
   margin-left: 5rem;
+}
+.rad {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 input:focus {
   outline: 0;
@@ -88,4 +109,14 @@ input:focus {
   border-top: 0.1rem solid #88898f;
   border-bottom: 0.1rem solid #88898f;
   display: none;
+}
+.head {
+  padding: 2rem;
+  font-size: 2rem;
+  color: white;
+  font-family: Roboto;
+  font-weight: 600;
+}
+.quiz_submit {
+  margin-left: 30%;
 }

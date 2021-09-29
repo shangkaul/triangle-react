@@ -15,6 +15,7 @@ export default function Hypotenuse() {
   }
   return (
     <div className="App">
+      <div className="head">Hypotenuse Calculator</div>
       <form className="hypForm" onSubmit={(e) => FormHandler(e)}>
         <label>
           Length of side a :
