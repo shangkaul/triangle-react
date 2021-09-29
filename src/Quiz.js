@@ -30,7 +30,7 @@ export default function Quiz() {
   }
   return (
     <div className="App">
-      <div className="head">Is this a Triangle?</div>
+      <div className="head">Triangle Quiz</div>
       <form className="quizForm" onSubmit={(e) => FormHandler(e)}>
         {ques.map((q, i) => {
           return (
